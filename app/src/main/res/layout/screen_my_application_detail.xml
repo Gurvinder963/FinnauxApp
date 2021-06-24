@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <include
+            android:id="@+id/topBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+            layout="@layout/layout_top_bar" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Application"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/color_light_black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+               android:text="Customer Name :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000"
+                android:layout_marginStart="20dp"
+
+                />
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_cs_name"
+            android:layout_alignParentEnd="true"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+            android:textColor="@color/color_light_black"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="3dp"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:text="Application No :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000"
+                android:layout_marginStart="20dp"
+
+                />
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvInquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/ic_cs_inquiry"
+            android:drawablePadding="10dp"
+            android:layout_alignParentEnd="true"
+            android:text="Inquiry"
+            android:textSize="14sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/color_light_black"
+            />
+        </LinearLayout>
+    </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+
+            android:background="#c3c3c3"
+            ></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            > <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:text="Mobile :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000"
+                android:layout_marginStart="20dp"
+
+                />
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+
+                android:textColor="@color/color_light_black"
+                android:layout_marginStart="20dp"
+
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Branch :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvBranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_cs_branch"
+                android:layout_alignParentEnd="true"
+                android:text="Branch"
+                android:layout_marginStart="20dp"
+                android:textColor="#000"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+
+            android:background="#c3c3c3"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Loan Product :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvLoanType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_cs_loan"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentEnd="true"
+                android:text="Car Loan"
+                android:layout_marginStart="20dp"
+                android:textColor="#000"
+                />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Amount :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_cs_rupee"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"
+                android:text="Amount"
+                android:layout_marginStart="20dp"
+                android:textColor="#000"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+
+            android:background="#c3c3c3"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:text="Purpose :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000"
+                android:layout_marginStart="20dp"
+
+                />
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvPurpose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="10dp"
+
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="10dp"
+                android:textColor="#000"
+                />
+
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+
+            android:background="#c3c3c3"
+            ></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <Button
+                android:id="@+id/btn_asset_detail"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+               android:visibility="gone"
+                android:background="@color/color_orange"
+                android:text="Asset Detail"
+
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_financial_detail"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_orange"
+                    android:text="Financial Detail"
+
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+<RelativeLayout
+    android:id="@+id/btn_add"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    android:layout_alignParentEnd="true"
+    android:background="@drawable/circle_orange"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/user_black"
+        android:backgroundTint="#fff"
+        ></ImageView>
+
+</RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvLoginFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_fee"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/color_blue"
+
+            android:textSize="14sp"
+            />
+
+
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvLoginFeeTakenOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fee Collection On :"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/color_blue"
+
+            android:textSize="14sp"
+            />
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvCollectionMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collection Mode :"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/color_blue"
+
+            android:textSize="14sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_Proceed"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/btn_orange_bg_new"
+                android:text="Final Submit"
+
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btn_Submit"
+        >
+
+        <include
+            android:id="@+id/topBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            layout="@layout/layout_top_bar" />
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvAppNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AE00001"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:layout_marginStart="10dp"
+            android:textColor="#000"
+
+            />
+
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pradeep Kumar (Hire)"
+            android:layout_marginStart="10dp"
+
+            android:textColor="#000"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer KYC Document"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/color_light_black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                ></TextView>
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            ></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/save"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+</RelativeLayout>

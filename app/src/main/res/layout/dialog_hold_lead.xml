@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    android:background="@drawable/dialog_positive_round">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold Lead"
+        android:textSize="14sp"
+        android:textColor="@color/color_blue"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        ></TextView>
+
+    <View  android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+
+        android:background="#c3c3c3"
+        ></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to hold lead ? if yes please enter reason"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="center_horizontal"
+        ></TextView>
+
+    <com.finnauxapp.Util.FontEditText
+        custom:typefaceAsset="fonts/Poppins-Regular.ttf"
+        android:id="@+id/edDate"
+        android:layout_width="match_parent"
+        android:hint="follow up Date"
+        android:layout_margin="10dp"
+        android:focusableInTouchMode="false"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:textCursorDrawable="@null"
+
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_spinner"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        />
+
+    <com.finnauxapp.Util.FontEditText
+        android:id="@+id/edReason"
+        style="@style/edit_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/selector_spinner"
+        android:hint="Enter reason..."
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textCursorDrawable="@null"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:background="@drawable/reject"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:textAllCaps="false"
+            android:layout_marginStart="3dp"
+            android:textColor="#fff"
+            android:background="@drawable/save"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

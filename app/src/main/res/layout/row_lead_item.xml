@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+
+    >
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="#f26422"
+
+        ></View>
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user_icon"
+        ></ImageView>
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/tvDate"
+        android:layout_toRightOf="@+id/ivProfile"
+        >
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Bold.ttf"
+            android:id="@+id/tvName"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pradeep KUMAR"
+
+            android:textColor="#02075D"
+            />
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvInquiryBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_blue"
+            android:drawableLeft="@drawable/ic_cs_inquiry"
+            />
+
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="969869893"
+            android:textColor="@color/color_blue"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@drawable/phone"
+            />
+
+
+
+    </LinearLayout>
+    <com.finnauxapp.Util.FontText
+        custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llTop"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/location"
+        android:layout_marginStart="80dp"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/color_blue"
+        android:layout_marginBottom="10dp"
+        android:text="dfldfkdlfdkjfkdfjdkfkdjldkdfldjkfdkfkdjfkdfdkfdfdfjkfkdjdfkjfkjksjdksjjdksjk"
+        />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#c3c3c3"
+            android:layout_below="@+id/tvDescription"
+            ></View>
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Bold.ttf"
+            android:id="@+id/tvHoldOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:drawablePadding="10dp"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/color_blue"
+
+            android:text="Hold On - 27 dec"
+            />
+
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Bold.ttf"
+            android:id="@+id/tvHoldReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHoldOn"
+            android:drawablePadding="10dp"
+           android:layout_marginTop="4dp"
+              android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:textSize="12sp"
+
+            android:textColor="@color/color_blue"
+            android:layout_marginBottom="10dp"
+            android:text="Hold Reason"
+            />
+    <com.finnauxapp.Util.FontText
+        custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="May 16"
+
+        android:textColor="@color/color_blue"
+        android:textSize="12sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        />
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="10:32 AM"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/color_orange"
+            android:textSize="12sp"
+            android:layout_below="@+id/tvDate"
+            android:layout_marginEnd="10dp"
+
+            />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvTime"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/next_arrow"
+            android:layout_marginTop="10dp"
+            ></ImageView>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

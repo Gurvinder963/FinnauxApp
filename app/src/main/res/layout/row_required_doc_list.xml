@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+
+    >
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="#f26422"
+
+        ></View>
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/user_icon"
+            ></ImageView>
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tvDate"
+            android:layout_toRightOf="@+id/ivProfile"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <com.finnauxapp.Util.FontText
+                android:id="@+id/tvTagName"
+                custom:typefaceAsset="fonts/Poppins-Bold.ttf"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Customer name : "
+                 android:textSize="12sp"
+                android:textColor="#02075D"
+
+                />
+
+                <com.finnauxapp.Util.FontText
+
+                    custom:typefaceAsset="fonts/Poppins-Bold.ttf"
+                    android:id="@+id/tvCustomerName"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#000"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Bold.ttf"
+                    android:textSize="13sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Pending Doc : "
+
+                    android:textColor="#02075D"
+
+                    />
+
+                <com.finnauxapp.Util.FontText
+
+                    custom:typefaceAsset="fonts/Poppins-Bold.ttf"
+                    android:id="@+id/tvDocName"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#000"
+
+                    />
+
+            </LinearLayout>
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/edDocNo"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:textSize="16sp"
+                android:paddingStart="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/selector_spinner"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Doc No"
+                android:inputType="textEmailAddress" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_browse"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+
+
+                        android:background="@color/color_orange"
+                        android:text="Browse"
+
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+
+                    <com.finnauxapp.Util.FontEditText
+                        custom:typefaceAsset="fonts/Poppins-Regular.ttf"
+                        android:id="@+id/tvAnswer"
+                        android:layout_width="match_parent"
+                        android:hint="no file chosen"
+                        android:maxLines="1"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="5dp"
+                        android:paddingStart="5dp"
+                        android:singleLine="true"
+                        android:layout_marginStart="15dp"
+                        android:textCursorDrawable="@null"
+
+                        android:layout_height="35dp"
+                        android:background="@drawable/selector_spinner"
+                        android:textColor="@color/color_light_black"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

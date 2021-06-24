@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Finnaux</string>
+    <string name="before_final_submit_please_collect_login_fee"><u>Before final submit please collect login fee</u></string>
+    <string name="login_fee"><u>Login Fee :</u></string>
+    <string name="reason_for_sendback"><u>Reason for Sendback</u></string>
+    <string name="notification_channel_id">channel-01</string>
+    <string name="resend"><u>RESEND</u></string>
+</resources>

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <include
+            android:id="@+id/topBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+            layout="@layout/layout_top_bar" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Application"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/color_light_black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            ></TextView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivProfile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user_icon"
+            app:civ_border_width="0dp"
+            app:civ_border_color="#FF000000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Customer Name :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cs_name"
+                    android:layout_alignParentEnd="true"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_light_black"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Gender/Age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cs_inquiry"
+                    android:drawablePadding="10dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/color_light_black"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+
+            android:background="#c3c3c3"
+            ></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+            > <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:text="Loan Type :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000"
+                android:layout_marginStart="20dp"
+
+                />
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvLoanType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+
+                android:textColor="@color/color_light_black"
+                android:layout_marginStart="20dp"
+
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Amount :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_cs_rupee"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+
+            android:background="#c3c3c3"
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/llRelation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+           android:visibility="gone"
+
+            > <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:text="Relation with Hirer :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000"
+                android:layout_marginStart="20dp"
+
+                />
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+                android:textSize="14sp"
+
+
+                android:textColor="@color/color_light_black"
+                android:layout_marginStart="10dp"
+
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llCustomerDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+          android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+
+                    android:src="@drawable/ic_cs_detail"
+                    />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+
+    android:background="@drawable/btn_blue_side_bg"
+    >
+    <com.finnauxapp.Util.FontText
+        custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Details"
+
+        android:textColor="#fff"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        />
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:rotation="180"
+   android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/back_icon"
+        android:backgroundTint="#fff"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+
+
+        ></ImageView>
+
+
+</RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llCustomerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/fl_cs_address"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/btn_blue_side_bg"
+                >
+                <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Address"
+                    android:textColor="#fff"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:rotation="180"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+
+
+                    ></ImageView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llCustomerKYCDOC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fl_kyc_doc"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/btn_blue_side_bg"
+                >
+
+                <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer KYC Doc"
+                    android:textColor="#fff"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:rotation="180"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+
+
+                    ></ImageView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFirmDirector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fl_kyc_doc"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/btn_blue_side_bg"
+                >
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Firm Directors Info"
+                    android:textColor="#fff"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:rotation="180"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+
+
+                    ></ImageView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llCustomerFamilyMembe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fl_cs_fm"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/btn_blue_side_bg"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Family Member"
+                    android:textColor="#fff"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:rotation="180"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+
+
+                    ></ImageView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llCustomerIncomeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fl_cs_in"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/btn_blue_side_bg"
+                >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Income Detail"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:rotation="180"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+
+
+                    ></ImageView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCustomerExpenditure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fl_cs_ex"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/btn_blue_side_bg"
+                >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Expenditure"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:rotation="180"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+
+
+                    ></ImageView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCustomerReference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:visibility="gone"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_cs_detail"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/btn_blue_side_bg"
+                >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Reference"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:rotation="180"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+
+
+                    ></ImageView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCustomerExistingLoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:visibility="gone"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fl_cs_ln"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/btn_blue_side_bg"
+                >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Existing Loan"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:rotation="180"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+
+
+                    ></ImageView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCustomerFIQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:visibility="gone"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fl_cs_ln"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+
+                android:background="@drawable/btn_blue_side_bg"
+                >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer FI Questions"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                />
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:rotation="180"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="#fff"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+
+
+                    ></ImageView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1031125956099",
+    "project_id": "finnaux-b3a5d",
+    "storage_bucket": "finnaux-b3a5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031125956099:android:c81a3fa83936561866c036",
+        "android_client_info": {
+          "package_name": "com.finnauxapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031125956099-uu820hma184ltfv19ajv2o7j54lviuqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD3ycDxs6kR3PlIrc65FKkoOEaZqjcwDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031125956099-uu820hma184ltfv19ajv2o7j54lviuqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

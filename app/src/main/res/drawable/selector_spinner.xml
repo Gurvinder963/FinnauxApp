@@ -1,0 +1,19 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+        <item>
+            <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item
+                android:state_pressed="true"
+                android:drawable="@drawable/edit_back_focus" /> <!-- pressed -->
+            <item
+                android:state_focused="true"
+                android:drawable="@drawable/edit_back_focus" /> <!-- focused -->
+            <item
+                android:drawable="@drawable/edit_back"/>
+        </selector>
+        </item>
+
+    </layer-list>
+    </item>
+</selector>

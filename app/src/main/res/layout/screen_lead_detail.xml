@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <include
+            android:id="@+id/topBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            layout="@layout/layout_top_bar" />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lead Detail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/color_light_black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        ></TextView>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/tvInquiryNo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+
+                android:background="@drawable/input_block"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Inquiry No"
+
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/tvName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+
+                android:background="@drawable/input_block"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Name"
+
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/tvSource"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+
+                android:background="@drawable/input_block"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Source"
+
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/tvBranch"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+
+                android:background="@drawable/input_block"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Branch"
+
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/tvAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+
+                android:background="@drawable/input_block"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Address"
+
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/tvMobile"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+
+                android:background="@drawable/input_block"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Mobile"
+
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/tvEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+
+                android:background="@drawable/input_block"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/tvAmount"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+
+                android:background="@drawable/input_block"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Amount"
+
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/tvPurpose"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+
+                android:background="@drawable/input_block"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Purpose"
+
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_Reject"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/reject"
+            android:text="Reject"
+
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_Proceed"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/save"
+            android:text="Proceed"
+
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_Hold"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reject"
+                android:text="Hold"
+
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_Revert"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/reject"
+                android:text="Revert"
+
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

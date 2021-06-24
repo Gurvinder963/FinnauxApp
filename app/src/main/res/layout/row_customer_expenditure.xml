@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+
+    >
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="#f26422"
+
+        ></View>
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/user_icon"
+            ></ImageView>
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tvDate"
+            android:layout_toRightOf="@+id/ivProfile"
+            >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Bold.ttf"
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kids School Fee"
+                android:textColor="#02075D"
+
+                />
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150000"
+                android:textColor="@color/color_light_black"
+                />
+
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly"
+                android:textColor="@color/color_light_black"
+                />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvTime"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/edit"
+            android:layout_marginTop="10dp"
+            ></ImageView>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

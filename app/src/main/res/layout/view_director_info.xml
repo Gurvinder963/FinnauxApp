@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog_positive_round"
+
+    >
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="bottom"
+        >
+        <com.finnauxapp.Util.FontEditText
+            android:id="@+id/edDirectorName"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+
+            android:background="@drawable/input_block"
+            android:textColorHint="#000"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:hint="Director Name"
+
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        >
+        <TextView
+            android:id="@+id/tvGenderDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            ></TextView>
+        <RadioGroup
+
+            android:id="@+id/rbGenderDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvGenderDirector"
+            >
+            <RadioButton
+                android:id="@+id/rbMaleDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="14sp"
+                android:checked="true"
+                ></RadioButton>
+
+            <RadioButton
+                android:id="@+id/rbFemaleDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="14sp"
+                ></RadioButton>
+        </RadioGroup>
+
+
+
+        <com.finnauxapp.Util.FontEditText
+            android:id="@+id/tvAgeDirector"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:hint="Age"
+            android:textSize="14sp"
+            android:paddingStart="10dp"
+            android:background="@drawable/input_block"
+
+            android:focusable="true"
+            android:inputType="number"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColorHint="#000"
+            android:layout_alignParentEnd="true"
+            ></com.finnauxapp.Util.FontEditText>
+
+
+    </RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="bottom"
+        >
+
+        <com.finnauxapp.Util.FontEditText
+            android:id="@+id/edDesignationDirector"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+
+            android:background="@drawable/input_block"
+            android:textColorHint="#000"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:hint="Designation"
+
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="bottom"
+        >
+
+        <com.finnauxapp.Util.FontEditText
+            android:id="@+id/edDirectorNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:maxLength="10"
+            android:background="@drawable/input_block"
+            android:textColorHint="#000"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:hint="Contact"
+
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <com.finnauxapp.Util.FontEditText
+            android:id="@+id/edDirectorShare"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:maxLength="10"
+            android:background="@drawable/input_block"
+            android:textColorHint="#000"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:hint="Share"
+
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#c3c3c3"
+        ></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_gravity="end"
+        >
+        <Button
+            android:id="@+id/btn_Delete"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/reject"
+            android:text="Delete"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/save"
+            android:text="Save"
+            android:layout_marginEnd="20dp"
+
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

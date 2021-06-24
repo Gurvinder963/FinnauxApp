@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <include
+            android:id="@+id/topBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+
+            layout="@layout/layout_top_bar" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Income Detail"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:textColor="@color/color_light_black"
+            android:textStyle="bold"
+
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:id="@+id/llDemoInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvAppNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AE00001"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#000"
+
+                />
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pradeep Kumar (Hire)"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+
+                />
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp">
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvLoanProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Select Job Type :"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000"
+                    android:layout_marginStart="10dp"
+
+                    />
+                <Spinner
+
+                    android:id="@+id/sp_job_type"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:minHeight="35dp"
+                    android:textColor="#000"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="#000"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:gravity="bottom"
+                >
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edCompanyFirmName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="20dp"
+
+                    android:background="@drawable/input_block"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Company/Firm Name"
+
+            />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:gravity="bottom"
+                >
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="20dp"
+
+                    android:background="@drawable/input_block"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Address"
+
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edPhoneNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:maxLength="10"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Phone No"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilMonthlyIncome"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edMonthlyIncome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Monthly Income"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilJobFrom"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edJobFrom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Job From (Yr)"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilTotalStaff"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edTotalStaff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Total Staff"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilDirectorName"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edDirectorName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Director Name"
+                  />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilDirectorContact"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edDirectorContact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Director Contact"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilDesignation"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edDesignation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Designation"
+                   />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilPriviousCompany"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edPriviousCompany"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Previous Company"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilNoOfYearPreviousCompany"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edNoOfYearPreviousCompany"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="No of Year Previous Company"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilReasonToLeave"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edReasonToLeave"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Reason to Leave"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilNoOfPartner"
+                android:gravity="bottom"
+                android:visibility="gone"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edNoOfPartner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="No of Partner in Firm"
+                    android:inputType="number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+               android:id="@+id/tilCustomerShareInFirm"
+                android:visibility="gone"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edCustomerShareInFirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:drawablePadding="10dp"
+                    android:hint="Customer share in Firm(%)"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilTotalTurnover"
+                android:visibility="gone"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edTotalTurnover"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:drawablePadding="10dp"
+                    android:hint="Total Turnover"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilGstRegNoOfFirm"
+                android:visibility="gone"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edGstRegNoOfFirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="GST /Reg No of Firm"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/tilFirmType"
+                android:visibility="gone"
+                android:gravity="bottom"
+                android:layout_marginTop="5dp">
+
+                <com.finnauxapp.Util.FontEditText
+                    android:id="@+id/edFirmType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/input_block"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#000"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Firm Type"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/ivBack"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:background="@drawable/reject"
+                    />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/save"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

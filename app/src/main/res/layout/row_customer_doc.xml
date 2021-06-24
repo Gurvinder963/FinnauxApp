@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/edit_back_doc"
+    >
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/ivClose"
+
+        android:background="@drawable/ic_close"
+        ></ImageView>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/tvLoanProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Select Doc Type :"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            ></TextView>
+        <Spinner
+
+            android:id="@+id/sp_doc_type"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+
+
+            android:layout_marginEnd="10dp"
+            android:minHeight="35dp"
+            android:textColor="#000"
+            android:textCursorDrawable="@null"
+            android:textColorHint="#000"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <com.finnauxapp.Util.FontEditText
+            android:id="@+id/edDocNo"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:paddingStart="20dp"
+
+
+            android:inputType="textCapCharacters"
+            android:background="@drawable/input_block"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:hint="Doc No"
+    />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp">
+        <Button
+            android:id="@+id/btnBrowse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:background="@drawable/save"
+            android:layout_weight="1"/>
+        <com.finnauxapp.Util.FontEditText
+            android:id="@+id/edFile"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:paddingStart="20dp"
+            android:focusable="false"
+             android:focusableInTouchMode="false"
+            android:background="@drawable/input_block"
+           android:hint="no file chosen"
+            android:singleLine="true"
+            android:layout_marginStart="15dp"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+</LinearLayout>

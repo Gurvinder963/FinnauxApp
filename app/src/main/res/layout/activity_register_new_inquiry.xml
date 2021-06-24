@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:src="@drawable/dashboard_logo"
+                android:layout_marginLeft="10dp"
+                ></ImageView>
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/dashboard_search"
+                ></ImageView>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_below="@+id/rlTop"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icon_humburger"
+
+
+
+                ></ImageView>
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/home"
+                ></ImageView>
+            <ImageView
+                android:id="@+id/btn_add_enquiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/regsiter_active"
+                ></ImageView>
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_below="@+id/llMenu"
+            android:background="#c3c3c3"
+            ></View>
+
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register new enquiry"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/color_light_black"
+
+            android:textSize="18sp"
+            />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp">
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvLoanProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Lead Source :"
+              android:layout_gravity="center_vertical"
+
+
+                />
+            <Spinner
+
+                android:id="@+id/sp_loan_type"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="10dp"
+                android:minHeight="35dp"
+                android:textColor="#000"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#000"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llLeadReference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp">
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Lead Reference :"
+                android:layout_gravity="center_vertical"
+
+
+                />
+            <Spinner
+
+                android:id="@+id/sp_lead_refrence"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:minHeight="35dp"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#000"
+                android:layout_height="wrap_content"
+
+                />
+            <EditText
+                android:id="@+id/edReference"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Enter Reference"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:paddingStart="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+
+                ></EditText>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+           >
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:hint="Customer Name"
+            android:background="@drawable/input_block"
+            android:textSize="16sp"
+            android:paddingStart="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            ></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            android:gravity="bottom"
+          >
+            <EditText
+                android:id="@+id/edAddress"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Customer Address"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:textSize="16sp"
+                android:background="@drawable/input_block"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:textCursorDrawable="@null"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:minLines="3"
+                android:gravity="top|left"
+                android:maxLines="6"
+                android:scrollbars="vertical"
+                ></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select State : "
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center_vertical"
+
+            />
+        <Spinner
+
+            android:id="@+id/sp_state"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="10dp"
+            android:minHeight="35dp"
+            android:textColor="#000"
+            android:textCursorDrawable="@null"
+            android:textColorHint="#000"
+            android:layout_height="wrap_content"
+
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select District : "
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textColor="#000"
+            android:layout_gravity="center_vertical"
+
+            />
+
+        <Spinner
+
+            android:id="@+id/sp_district"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="10dp"
+            android:minHeight="35dp"
+            android:textColor="#000"
+            android:textCursorDrawable="@null"
+            android:textColorHint="#000"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Tehsil : "
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textColor="#000"
+             android:layout_gravity="center_vertical"
+            />
+
+
+        <Spinner
+
+            android:id="@+id/sp_Tehsil"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:minHeight="35dp"
+            android:textColor="#000"
+            android:textCursorDrawable="@null"
+            android:textColorHint="#000"
+            android:layout_height="wrap_content"
+
+            />
+
+</LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            >
+
+            <com.finnauxapp.Util.FontEditText
+                android:id="@+id/edPincode"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+                android:maxLength="6"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:hint="Pincode"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+          >
+            <EditText
+                android:id="@+id/edContact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Contact No."
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:maxLength="10"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="number"
+                ></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+            >
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Email (Optional)"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                ></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+         >
+
+
+
+        <EditText
+            android:id="@+id/edLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:hint="Loan Amount"
+            android:background="@drawable/input_block"
+            android:textSize="16sp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            ></EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="bottom"
+
+            >
+            <EditText
+                android:id="@+id/edPupose"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Purpose"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:textSize="16sp"
+                android:background="@drawable/input_block"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:textCursorDrawable="@null"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:minLines="3"
+                android:gravity="top|left"
+                android:maxLines="6"
+                android:scrollbars="vertical"
+                ></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/cbSelfAssign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self Assign"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+
+            />
+        <LinearLayout
+            android:id="@+id/llBranch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch : "
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+
+                />
+            <Spinner
+
+                android:id="@+id/sp_Branch"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="10dp"
+                android:minHeight="35dp"
+                android:textColor="#000"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#000"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+            <Button
+                android:id="@+id/btn_Submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/save"
+                android:text="Submit"
+
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

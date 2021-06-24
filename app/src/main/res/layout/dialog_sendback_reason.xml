@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    android:background="@drawable/dialog_positive_round"
+    >
+
+
+
+    <com.finnauxapp.Util.FontText
+        custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finnaux"
+        android:textSize="14sp"
+        android:textColor="@color/color_blue"
+
+        android:layout_gravity="center_horizontal"
+        />
+
+    <View  android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+
+        android:background="#c3c3c3"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <com.finnauxapp.Util.FontText
+
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Credit User : "
+            android:textSize="16sp"
+            android:textColor="@color/color_blue"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+
+            />
+        <com.finnauxapp.Util.FontText
+            android:id="@+id/tvCreditUser"
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Credit User : "
+            android:textSize="16sp"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <com.finnauxapp.Util.FontText
+
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="Remark : "
+            android:textSize="16sp"
+             android:textColor="@color/color_blue"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            />
+    <com.finnauxapp.Util.FontText
+        android:id="@+id/tvRemark"
+        custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:text="Remark : "
+        android:textSize="16sp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        />
+    </LinearLayout>
+
+
+
+</LinearLayout>

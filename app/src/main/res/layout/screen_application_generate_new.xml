@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <include
+            android:id="@+id/topBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+            layout="@layout/layout_top_bar" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Application No."
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/color_light_black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            ></TextView>
+
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvInquiryNo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:text="Inquiry No."
+            android:paddingStart="20dp"
+            android:background="@drawable/input_block"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            />
+
+
+
+        <com.finnauxapp.Util.FontText
+            custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+            android:id="@+id/tvBranch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:text="Branch"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/input_block"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            />
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp">
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                android:id="@+id/tvLoanProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Loan Product :"
+               android:layout_gravity="center_vertical"
+
+
+                />
+            <Spinner
+
+                android:id="@+id/sp_loan_type"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:minHeight="35dp"
+                android:textColor="#000"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#000"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+            >
+            <com.finnauxapp.Util.FontEditText
+
+                android:id="@+id/edLoanPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Loan Purpose"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#c3c3c3"
+            ></View>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvSchemeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/color_blue"
+            android:layout_marginStart="10dp"
+            android:text="No Scheme Selected!"
+            ></TextView>
+
+    <ImageView
+        android:id="@+id/ivSchemeClose"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close"
+        ></ImageView>
+</RelativeLayout>
+        <Button
+            android:id="@+id/btn_Get_Scheme"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_orange"
+            android:text="Get Scheme"
+
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="10dp"
+    android:background="#c3c3c3"
+    ></View>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            >
+            <com.finnauxapp.Util.FontEditText
+
+                android:id="@+id/edAssetsCost"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Assets Cost"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+            >
+        <com.finnauxapp.Util.FontEditText
+
+            android:id="@+id/edNetFinanceAmount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:hint="Net Finance Amount"
+            android:paddingStart="20dp"
+            android:background="@drawable/input_block"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:inputType="numberDecimal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tvIRRtYPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IRR Input Type"
+                android:textSize="14sp"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                ></TextView>
+            <RadioGroup
+
+                android:id="@+id/rbIrrInputType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tvIRRtYPE"
+                >
+                <RadioButton
+                    android:id="@+id/rbROI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ROI (%)"
+                    android:textSize="14sp"
+                    android:checked="true"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbFlatEMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flat EMI Amount (Rs.)"
+                    android:textSize="14sp"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbStepEMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step EMI"
+                    android:textSize="14sp"
+                    ></RadioButton>
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvInputLayoutROI"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+            >
+            <com.finnauxapp.Util.FontEditText
+
+                android:id="@+id/edROIInput"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Flat Rate"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp">
+            <com.finnauxapp.Util.FontText
+                custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="EMI Frequency :"
+                android:layout_gravity="center_vertical"
+
+
+                />
+            <Spinner
+
+                android:id="@+id/sp_emi_Frequency"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:minHeight="35dp"
+                android:textColor="#000"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#000"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+            >
+            <com.finnauxapp.Util.FontEditText
+
+                android:id="@+id/edNoOfInstallments"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="No of Installments"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+            >
+            <com.finnauxapp.Util.FontEditText
+
+                android:id="@+id/edTenureMonth"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Tenure (Month)"
+                android:paddingStart="20dp"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+            >
+            <com.finnauxapp.Util.FontEditText
+
+                android:id="@+id/edInstallmentInAdvance"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Instl In Adv.:"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+            >
+            <com.finnauxapp.Util.FontEditText
+
+                android:id="@+id/edManagementFee"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Mgmt. Fee (Rs.):"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="bottom"
+            >
+            <com.finnauxapp.Util.FontEditText
+
+                android:id="@+id/edPreferableEMIDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Preferable EMI Date"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_block"
+                android:textSize="16sp"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c3c3c3"
+            android:layout_marginTop="10dp"
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/llStepHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:background="@color/color_orange"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="#"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"></TextView>
+            <View
+                android:layout_width="0.5dp"
+                android:background="#c3c3c3"
+                android:layout_height="40dp"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:text="From EMI"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"></TextView>
+            <View
+                android:layout_width="0.5dp"
+                android:background="#c3c3c3"
+                android:layout_height="40dp"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:text="To EMI"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"></TextView>
+            <View
+                android:layout_width="0.5dp"
+                android:background="#c3c3c3"
+                android:layout_height="40dp"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:text="EMI Amount"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></TextView>
+            <View
+                android:layout_width="0.5dp"
+                android:background="#c3c3c3"
+                android:layout_height="40dp"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:text="No of EMI"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"></TextView>
+            <View
+                android:layout_width="0.5dp"
+                android:background="#c3c3c3"
+                android:layout_height="40dp"></View>
+            <TextView
+                android:layout_width="0dp"
+                android:text="Total Amount"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></TextView>
+            <View
+                android:layout_width="0.5dp"
+                android:background="#c3c3c3"
+                android:layout_height="40dp"></View>
+        </LinearLayout>
+        <View
+            android:id="@+id/view33"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c3c3c3"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/llStepEMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            ></LinearLayout>
+        <LinearLayout
+            android:id="@+id/llTotalStepView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></TextView>
+
+            <TextView
+                android:id="@+id/tvTotalStepEMI"
+                android:layout_width="0dp"
+
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"></TextView>
+            <View
+                android:layout_width="0.5dp"
+                android:background="#c3c3c3"
+                android:layout_height="40dp"></View>
+            <TextView
+                android:id="@+id/tvTotalAmountStepEMI"
+                android:layout_width="0dp"
+
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></TextView>
+            <View
+                android:layout_width="0.5dp"
+                android:background="#c3c3c3"
+                android:layout_height="40dp"></View>
+        </LinearLayout>
+        <View
+            android:id="@+id/view44"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="#c3c3c3"
+            android:layout_marginTop="10dp"
+            ></View>
+<LinearLayout
+    android:id="@+id/llPlusMinus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="20dp"
+    android:gravity="end"
+    android:visibility="gone"
+    android:layout_marginBottom="20dp"
+    >
+
+    <Button android:id="@+id/btn_Minus"
+        android:layout_width="27dp" android:layout_height="27dp"
+        android:layout_gravity="end"
+
+        android:gravity="end"
+      android:layout_marginEnd="10dp"
+
+        android:background="@drawable/btn_minus"
+        />
+    <Button android:id="@+id/btn_add"
+        android:layout_width="30dp" android:layout_height="30dp"
+        android:layout_gravity="end"
+
+        android:gravity="end"
+
+
+        android:background="@drawable/btn_add_orange"
+        />
+
+</LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_Calculate_emi_irr"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_orange"
+            android:text="Calculate EMI and IRR"
+
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/llCalculate_EMI_IRR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Disbursement Amount :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvDisbursement_Amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cs_rupee"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Interest Amount :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvInterest_Amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cs_rupee"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+
+            android:background="#c3c3c3"
+            ></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Agreement Value :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvAgreement_Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cs_rupee"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="EMI Amount :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvEMIAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cs_rupee"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+
+            android:background="#c3c3c3"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="LTV(%) :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvLTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="ROI(%) :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvROI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+
+            android:background="#c3c3c3"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Case IRR(%) :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvCaseIRR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Disbursement IRR(%) :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvDisbursementIRR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+
+            android:background="#c3c3c3"
+            ></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:text="Margin :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+                    android:id="@+id/tvMargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cs_rupee"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <com.finnauxapp.Util.FontText
+                    custom:typefaceAsset="fonts/Poppins-Medium.ttf"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View  android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+
+            android:background="#c3c3c3"
+            ></View>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_Cancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reject"
+                android:text="Cancel"
+
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_Submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/save"
+                android:text="Submit"
+
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
